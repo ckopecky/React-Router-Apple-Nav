@@ -1,0 +1,26 @@
+//App
+//--NavBar
+//----img (apple logo) "/" button
+//----icon (search)
+    //----Replaces Nav Bar elements with:
+        //----Search Bar
+        //------placeholder: Search Apple.com
+        //------input type: text;
+        //--------QuickLinks:
+                        //Find a Store
+                        //Accessories
+                        //iPod
+                        //iOS
+                        //Giftcards
+//----icon (shopping bag)
+    //----onClick Pop Up Button
+    //----Pop up Menu
+        //----Bag
+        //----Faves
+        //----Orders
+        //----Account
+        //----Sign In
+//--MacInfoBar
+    //----IconCardWrapper
+        //----img with onClick event
+        //----CardBody with caption
