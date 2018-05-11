@@ -1,15 +1,30 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router';
 import MacIconCard from './MacInfoBar';
+import NavPage from './NavPage';
 import './App.css';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        Something here!
-        <MacIconCard />
-      </div>
-    );
-  }
+
+const FourOhFour = () => {
+  return (
+    `Oops! You've reached a page that doesn't exist. You've been 404'd!`
+  )
 }
 
+
+const App = () =>{
+  return (
+    <div className="App">
+      <Switch>
+        <Route exact path = '/' component = {NavPage} />
+        <Route component = {FourOhFour} />
+        <Route />
+      </Switch>
+    </div>
+  );
+}
+
+export default App;
+
+  
+    
