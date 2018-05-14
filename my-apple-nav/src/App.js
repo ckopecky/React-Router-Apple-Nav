@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router';
-import MacIconCard from './MacInfoBar';
 import NavPage from './NavPage';
 import './App.css';
 
@@ -15,11 +14,13 @@ const FourOhFour = () => {
 const App = () =>{
   return (
     <div className="App">
+   
       <Switch>
         <Route exact path = '/' component = {NavPage} />
         <Route component = {FourOhFour} />
         <Route />
       </Switch>
+      
     </div>
   );
 }

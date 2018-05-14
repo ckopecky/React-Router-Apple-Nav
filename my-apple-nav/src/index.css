@@ -3,3 +3,28 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.navigation{
+  display:flex;
+  justify-content: space-around;
+  height: 20px;
+  padding-top: 10px;
+  background-color: #333333;
+  color:#FFFFFF
+  
+}
+.nav{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+    .nav:hover{
+      color: #B7B7B7;
+
+    }
+
+    .shopping{
+      background-color: #333333;
+      color: #FFFFFF;
+      border: none;
+    }
+  
+
