@@ -1,52 +1,36 @@
-import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
-import MacIconCard from './MacInfoBar';
-import ButtonDropdown from './buttonDropdown.js';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
+import iconStripApple from './iconStripApple.PNG'
 
-export default class NavPage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { fadeIn: true };
-
-        const handleChange = () => {
-            this.props.onUserInput(
-              this.refs.filterTextInput.value,
-            );
-          }
-    }
-
+class NavPage extends Component {
     render() {
         return (
             <div>
-                <div className = "navigation">
-                    <Link to = '/' className = "nav">Home</Link>
-                    <Link to = '/Mac' className = "nav">Mac</Link>
-                    <Link to = '/iPad' className = "nav">iPad</Link>
-                    <Link to = '/iPhone' className = "nav">iPhone</Link>
-                    <Link to = '/Watch' className = "nav">Watch</Link>
-                    <Link to = '/TV' className = "nav">TV</Link>
-                    <Link to = '/Music' className = "nav">Music</Link>
-                    <Link to = '/Support' className = "nav">Support</Link>
-                    <div>
-                    <form className = "searchBar">
-                        <input 
-                                type= "text"
-                                placeholder = "...Search..."
-                                value = {this.props.filterText}
-                                ref = "filterTextInput"
-                                onChange = {this.handleChange}
-                            />
-                    </form>
-                    </div>
-                    <ButtonDropdown>Shopping</ButtonDropdown>
-                </div>
+            <div className="top-nav-bar">
                 <div>
-                    I'm supposed to be icons of various Apple products but I won't work. 
+                  <div className="apple-logo menu-link">Apple</div>  
                 </div>
-            </div>      
-         );
-    }
+                <nav className="nav-bar">
+                    <Link className="menu-link" to="#">Mac</Link>
+                    <Link className="menu-link" to="#">iPhone</Link>
+                    <Link className="menu-link" to="#">iPad</Link>
+                    <Link className="menu-link" to="#">Watch</Link>
+                    <Link className="menu-link" to="#">TV</Link>
+                    <Link className="menu-link" to="#">Music</Link>
+                    <Link className="menu-link" to="#">Support</Link>
+                </nav>
+                <div className="search-and-shop">
+                  <div className="top-nav-bar menu-link">Search</div>
+                  <div className="top-nav-bar menu-link">Shop</div>
+                </div>
+            </div>
+            <div>
+                <img src={iconStripApple}/>
+            </div>
+            </div>
 
- 
-    
-};
+        );
+    }
+}
+
+export default NavPage;

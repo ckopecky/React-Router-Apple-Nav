@@ -6,7 +6,9 @@ import './App.css';
 
 const FourOhFour = () => {
   return (
-    `Oops! You've reached a page that doesn't exist. You've been 404'd!`
+    <div>
+    <h1>`Oops! You've reached a page that doesn't exist. You've been 404'd!`</h1>
+    </div>
   )
 }
 
@@ -18,7 +20,6 @@ const App = () =>{
       <Switch>
         <Route exact path = '/' component = {NavPage} />
         <Route component = {FourOhFour} />
-        <Route />
       </Switch>
       
     </div>

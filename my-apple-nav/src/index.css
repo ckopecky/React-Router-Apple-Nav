@@ -12,19 +12,48 @@ body {
   color:#FFFFFF
   
 }
-.nav{
+.top-nav-bar{
+  background-color: #333333;
+  height:40px;
   color: #FFFFFF;
-  text-decoration: none;
+  font-size:1rem;
+  font-weight:lighter;
+  width: 82%;
+  display:flex;
+  margin: 0 auto;
 }
-    .nav:hover{
-      color: #B7B7B7;
+.apple-logo{
+  display:flex;
+  width:80px;
+  justify-content:center;
+  align-items:center;
+  margin-top:10px;
+  margin-left:30px;
+  
+}
+.nav-bar{
+  width:80%;
+  display:flex;
+  justify-content:space-around;
+  margin: 0 auto;
+  height:40px;
 
-    }
+}
 
-    .shopping{
-      background-color: #333333;
-      color: #FFFFFF;
-      border: none;
-    }
+.menu-link{
+  text-decoration:none;
+  color:#FFFFFF;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.menu-link:hover{
+  color: #999999
+}
+.search-and-shop{
+  display:flex;
+  width:10%;
+  justify-content: space-around;
+}
   
 
